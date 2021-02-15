@@ -24,7 +24,6 @@ func TestAccDataSourceLinodeAccount_basic(t *testing.T) {
 					resource.TestCheckResourceAttrSet(resourceName, "company"),
 					resource.TestCheckResourceAttrSet(resourceName, "address_1"),
 					resource.TestCheckResourceAttrSet(resourceName, "address_2"),
-					resource.TestCheckResourceAttrSet(resourceName, "phone"),
 					resource.TestCheckResourceAttrSet(resourceName, "city"),
 					resource.TestCheckResourceAttrSet(resourceName, "state"),
 					resource.TestCheckResourceAttrSet(resourceName, "country"),

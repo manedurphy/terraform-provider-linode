@@ -118,6 +118,7 @@ func testAccCheckLinodeVLANDestroy(s *terraform.State) error {
 
 func TestAccLinodeVLAN_basic(t *testing.T) {
 	t.Parallel()
+	optInTest(t)
 
 	var instance linodego.Instance
 
@@ -145,6 +146,7 @@ func TestAccLinodeVLAN_basic(t *testing.T) {
 
 func TestAccLinodeVLAN_updateMultipleLinodes(t *testing.T) {
 	t.Parallel()
+	optInTest(t)
 
 	var instance1, instance2, instance3 linodego.Instance
 
